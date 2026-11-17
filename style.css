@@ -1,0 +1,251 @@
+
+/* =================================
+CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #F1F5F9;
+}
+
+
+/* =================================
+TARJETA SUPERIOR
+================================= */
+
+.tarjeta_superior {
+    width: 100%;
+    padding: 15px;
+    background-color: #0B2D5B;
+    color: white;
+    border: 2px solid #0B2D5B;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta_superior h1 {
+    font-size: 28px;
+}
+
+.tarjeta_superior p {
+    font-size: 16px;
+}
+
+
+/* =================================
+TÍTULO PRINCIPAL
+================================= */
+
+header .titulo_taller {
+    color: #0B2D5B;
+    font-size: 32px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+
+/* =================================
+CONTENIDO PRINCIPAL
+================================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+
+/* =================================
+TARJETAS
+================================= */
+
+main .tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #0B2D5B;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =================================
+ENCABEZADOS
+================================= */
+
+main .tarjeta h2 {
+    color: #0B2D5B;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+main .tarjeta h3 {
+    color: #0B2D5B;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+
+/* =================================
+PÁRRAFOS
+================================= */
+
+main .tarjeta p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =================================
+IMÁGENES
+================================= */
+main .tarjeta img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* =================================
+VIDEO
+================================= */
+
+main iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =================================
+LISTA 
+================================= */
+
+main .tarjeta ol {
+    padding-left: 25px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+main .tarjeta ol li {
+    margin-bottom: 8px;
+}
+
+
+
+/* =================================
+FOOTER
+================================= */
+
+footer {
+    width: 100%;
+    padding: 15px;
+    background-color: #0B2D5B;
+    color: white;
+    text-align: center;
+    border-top: 2px solid #0B2D5B;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =================================
+TABLETS
+================================= */
+
+@media (max-width: 900px) {
+
+    main {
+        width: 94%;
+    }
+
+    header .titulo_taller {
+        font-size: 28px;
+    }
+
+    main .tarjeta {
+        padding: 18px;
+    }
+
+}
+
+
+/* =================================
+CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    .tarjeta_superior {
+        padding: 12px;
+    }
+
+    .tarjeta_superior h1 {
+        font-size: 21px;
+    }
+
+    .tarjeta_superior p {
+        font-size: 14px;
+    }
+
+    header .titulo_taller {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    main {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    main .tarjeta {
+        width: 100%;
+        padding: 15px;
+        gap: 12px;
+        margin: 15px auto;
+    }
+
+    main .tarjeta h2 {
+        font-size: 21px;
+    }
+
+    main .tarjeta h3 {
+        font-size: 18px;
+    }
+
+    main .tarjeta p {
+        font-size: 15px;
+    }
+
+    main .tarjeta ol {
+        padding-left: 22px;
+        font-size: 15px;
+    }
+
+    main iframe {
+        width: 100%;
+    }
+
+    footer {
+        padding: 12px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+}
